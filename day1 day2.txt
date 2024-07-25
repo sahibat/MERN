@@ -1,0 +1,105 @@
+cp source destination: for moving file 
+
+
+to copy whole folder to another??
+
+
+pwd 
+ls 
+mkdir
+rmdir
+
+cd 
+touch 
+cd ..
+rm -rv folder
+cp
+mv
+cp -r(for copying whole folder)
+
+
+assignment:
+--> automate a Linux system like such it will keep adding the time in ur current sys every 5 min
+--> using Linux download any of yt video on the sys
+
+ find out all file that is formed by current user and move it to the backup folder 
+create a file of 100mb 
+find out the file whose size is <90mb(find /home/sahibataneja2810/test -type f -size -90M)
+find out whose size is lesss than 120mb
+find out files which is created in last 5 mins(find /home/sahibataneja2810/test -type f -mmin -10)
+find only files which is being created by current user
+
+
+
+DAY-2
+Tar File vs zip
+user management and permission
+
+tar -cf (create file)
+
+ls -lh{ shows the time when the file was created}
+
+to see the content in tar file--> tar -tf regex.tar
+-x(extract)
+tar -xf regex.tar
+
+ques-> create 4 files 2txt and 2 pdf
+creae tar file with name yash.tar and add all txt file 
+see all the content of tar file 
+append the pdf files to same yash.tar 
+now extract only txt file in current location
+
+tar -rvf yash.tar sa.pdf as.pdf
+
+--append -f ya -rf 
+
+whoami-tells current user name
+useradd 
+
+-m
+tail -2--> used to extract 
+
+/etc/passwd
+
+
+su - raj(to login into the new user)
+
+ls -lh(info it gives)
+1.permission(divided in owner user and others)
+2. link
+3.username or ownername
+4.group
+5.file size
+6.time 
+7.file ya folder name
+example:-rw-rw-r-- 1 sahibataneja2810 sahibataneja2810    0 Jul  2 03:45 abc.txt
+rwx(read write execute)-the max permission that the user can get
+------------------------------------------------------------------------
+|
+|
+|file-
+|
+|read(4):content read from file
+|
+|(cat,tail)
+|
+|write(2): we can write or modify content inside the file
+|
+execute(1): we can run a file as a program                   
+
+folder/directory-
+we can run ls command 
+we can create or delete files and folders
+we can change the directory 
+
+assignment-
+--> create a user name as ujwal and give it a unique id 5000 and give a comment"ujwal user has been created"
+and the user's acc will be expired in 24 hrs 
+the user should be added to a sales group 
+user should have a homedirectory 
+and the user should be having a shell name as /bin/sh
+**all in one command only**
+--> group- sales and marketing from the command groupadd
+you have to create a user with eeshaan name
+and then add this user in the sales group 
+and then in the marketing group 

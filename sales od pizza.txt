@@ -1,0 +1,33 @@
+sales od pizza
+[
+    {
+        $lookup: {
+            from: "pizzas",
+            localField: "pizza_id",
+            foreignField: "pizza_id",
+            as: "pizza_details"
+        }
+    },
+    {
+        $unwind: "$pizza_details"
+    },
+    {
+        $group: {
+            _id: "$pizza_details.size",
+            order_count: { $sum: "$quantity" }
+        }
+    },
+    {
+        $sort: { order_count: -1 }
+    },
+    {
+        $limit: 1
+    },
+    {
+        $project: {
+            _id: 0,
+            size: "$_id",
+            order_count: 1
+        }
+    }
+]

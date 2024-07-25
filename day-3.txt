@@ -1,0 +1,4 @@
+day-3
+git diff: compares only b/w staging area and committed files
+git diff --staged: compares difference b/w the same files
+

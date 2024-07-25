@@ -1,0 +1,10 @@
+ 
+
+working directory---->staging area---->.git folder
+            
+git config --global user.name 
+
+ASSIGNMENT-
+-> branches in git
+->pull and push command difference
+->pull and fetch difference        
